@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg7-xV-89h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QHR-nw-ya8">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" separatorInsetReference="fromAutomaticInsets" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q4w-ie-GaD">
-                                <rect key="frame" x="0.0" y="91" width="390" height="753"/>
+                                <rect key="frame" x="0.0" y="143" width="390" height="701"/>
                                 <inset key="separatorInset" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="66" id="WLA-WM-GNM" customClass="TaskCell" customModule="ios101_project7_task" customModuleProvider="target">
@@ -119,11 +119,11 @@
             </objects>
             <point key="canvasLocation" x="1938" y="-715"/>
         </scene>
-        <!--Item-->
+        <!--Tasks-->
         <scene sceneID="J7Q-nV-HWx">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wg7-xV-89h" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Kwk-ro-rCO"/>
+                    <tabBarItem key="tabBarItem" title="Tasks" image="checklist" catalog="system" id="Kwk-ro-rCO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="DRp-lg-aqr">
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
@@ -134,7 +134,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2qf-9z-AjM"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b5u-Fa-KVw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATm-zN-Jih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -321,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QV8-pU-3Mt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="16"/>
+            <point key="canvasLocation" x="2869.2307692307691" y="15.639810426540283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cvc-vx-Zlw">
@@ -341,11 +341,11 @@
             </objects>
             <point key="canvasLocation" x="2803" y="-716"/>
         </scene>
-        <!--Item-->
+        <!--Calendar-->
         <scene sceneID="Ijw-fb-yMF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="daT-oS-uAW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="t9z-Gp-dDc"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="t9z-Gp-dDc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0bE-gs-in2">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
@@ -358,10 +358,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9P-cv-T31" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="16"/>
+            <point key="canvasLocation" x="2086" y="16"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Cxj-9Q-vVq">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QHR-nw-ya8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="pBR-ua-EgD"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ovx-sU-FuB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Wg7-xV-89h" kind="relationship" relationship="viewControllers" id="Dcu-ec-ZM8"/>
+                        <segue destination="daT-oS-uAW" kind="relationship" relationship="viewControllers" id="6U7-kg-MF9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0H-z7-It4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="16"/>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="checklist" catalog="system" width="128" height="107"/>
         <image name="circle" catalog="system" width="128" height="123"/>
         <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
         <image name="plus" catalog="system" width="128" height="113"/>
